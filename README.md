@@ -10,12 +10,12 @@ and JavaScript.
 
 ## Projects
 
-- **Biography** — Personal profile page
-- **Coin Toss Game** — JavaScript logic and basic DOM manipulation
-- **Interactive Quiz** — Dynamic quiz using JavaScript logic and DOM manipulation
-- **Long Form Multimedia** — Scrolling editorial with embedded media
-- **Zen Garden** — CSS-driven visual experience
-- **Codepen** — Experimental builds
+- **Biography:** Personal profile page
+- **Coin Toss Game:** JavaScript logic and basic DOM manipulation
+- **Interactive Quiz:** Dynamic quiz using JavaScript logic and DOM manipulation
+- **Long Form Multimedia:** Scrolling editorial with embedded media
+- **Zen Garden:** CSS-driven visual experience
+- **Codepen:** Experimental builds
 
 ## Process
 
