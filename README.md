@@ -1,5 +1,5 @@
 
-# Interactive Media: Project Portfolio
+# Interactive Web Design
 
 A collection of web projects built during my Interactive Media course 
 in the Fall 2025 semester at Florida International University.
