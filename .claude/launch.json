@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "interactive-website",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["-e", "const http=require('http'),fs=require('fs'),path=require('path');http.createServer((req,res)=>{let f=path.join('C:/Users/natha/Desktop/CODING/interactive-website',req.url==='/'?'/index.html':req.url);try{const d=fs.readFileSync(f);const ext=path.extname(f);const types={'.html':'text/html','.css':'text/css','.js':'application/javascript','.png':'image/png','.jpg':'image/jpeg','.mp4':'video/mp4'};res.writeHead(200,{'Content-Type':types[ext]||'application/octet-stream'});res.end(d)}catch(e){res.writeHead(404);res.end('Not found')}}).listen(3456,()=>console.log('Server at http://localhost:3456'))"],
+      "port": 3456
+    }
+  ]
+}

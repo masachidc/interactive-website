@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="interactiveQuizFun.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <title>Know Your Campus - FIU Edition</title>
+</head>
+<body>
+ 
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-links">
+                <a href="../indexFinal.html" class="nav-link">Home</a>
+                <a href="../zenGarden/zenGarden.html" class="nav-link">Zen Garden</a>
+                <a href="../longFormMultimedia/longFormMultimedia.html" class="nav-link">Multimedia</a>
+                <a href="../interactiveQuiz/knowYourSchool.html" class="nav-link">Interactive Quiz</a>
+                <a href="../coinTossGame/coinTossGame.html" class="nav-link">Coin Toss</a>
+                <a href="../codepen/codepen.html" class="nav-link">Code Pen</a>
+            </div>
+        </div>
+    </nav>
+ 
+    <div class="split-layout">
+        
+        <main class="left-scroll-panel" id="quizPage">
+            
+            <!-- Questions View Container -->
+            <div class="quiz-content" id="questionsView">
+                <div class="intro-text">
+                    <h1>Welcome, Panther!</h1>
+                    <p>Scroll down to test your knowledge.</p>
+                </div>
+ 
+                <!-- Q1 -->
+                <section class="question-box" data-question="1">
+                    <img src="01.jpg" alt="Building Image" onerror="this.style.backgroundColor='#eee'">
+                    <h3>1. Name the building.</h3>
+                    <div class="answers">
+                        <button class="answer-btn" data-question="1" data-answer="FIU Mango">
+                            <span class="radio-circle"></span> FIU Mango
+                        </button>
+                        <button class="answer-btn" data-question="1" data-answer="Wellness and Recreation Center">
+                            <span class="radio-circle"></span> Wellness and Recreation Center
+                        </button>
+                        <button class="answer-btn" data-question="1" data-answer="Academic Health Center 1">
+                            <span class="radio-circle"></span> Academic Health Center 1
+                        </button>
+                        <button class="answer-btn" data-question="1" data-answer="SIPA II">
+                            <span class="radio-circle"></span> SIPA II
+                        </button>
+                    </div>
+                </section>
+ 
+                <!-- Q2 -->
+                <section class="question-box" data-question="2">
+                    <img src="02.jpg" alt="Building Image" onerror="this.style.backgroundColor='#eee'">
+                    <h3>2. Name the two buildings. (Select 2)</h3>
+                    <div class="answers">
+                        <button class="answer-btn checkbox-btn" data-question="2" data-answer="Lapis">
+                            <span class="checkbox-square"></span> Lapis
+                        </button>
+                        <button class="answer-btn checkbox-btn" data-question="2" data-answer="The One">
+                            <span class="checkbox-square"></span> The One
+                        </button>
+                        <button class="answer-btn checkbox-btn" data-question="2" data-answer="109 Towers">
+                            <span class="checkbox-square"></span> 109 Towers
+                        </button>
+                        <button class="answer-btn checkbox-btn" data-question="2" data-answer="Terazul">
+                            <span class="checkbox-square"></span> Terazul
+                        </button>
+                    </div>
+                </section>
+ 
+                <!-- Q3 -->
+                <section class="question-box" data-question="3">
+                    <img src="03.jpg" alt="Building Image" onerror="this.style.backgroundColor='#eee'">
+                    <h3>3. Identify the building.</h3>
+                    <div class="answers">
+                        <button class="answer-btn" data-question="3" data-answer="Viertes Haus">
+                            <span class="radio-circle"></span> Viertes Haus
+                        </button>
+                        <button class="answer-btn" data-question="3" data-answer="Ryder Business Building">
+                            <span class="radio-circle"></span> Ryder Business Building
+                        </button>
+                        <button class="answer-btn" data-question="3" data-answer="SIPA I">
+                            <span class="radio-circle"></span> SIPA I
+                        </button>
+                        <button class="answer-btn" data-question="3" data-answer="Deuxieme Maison">
+                            <span class="radio-circle"></span> Deuxieme Maison
+                        </button>
+                    </div>
+                </section>
+ 
+                <!-- Q4 -->
+                <section class="question-box" data-question="4">
+                    <img src="04.jpg" alt="Pond Image" onerror="this.style.backgroundColor='#eee'">
+                    <h3>4. Location of this pond?</h3>
+                    <div class="answers">
+                        <button class="answer-btn" data-question="4" data-answer="Biscayne Bay Campus">
+                            <span class="radio-circle"></span> Biscayne Bay Campus
+                        </button>
+                        <button class="answer-btn" data-question="4" data-answer="Engineering Center">
+                            <span class="radio-circle"></span> Engineering Center
+                        </button>
+                        <button class="answer-btn" data-question="4" data-answer="MMC Campus">
+                            <span class="radio-circle"></span> MMC Campus
+                        </button>
+                        <button class="answer-btn" data-question="4" data-answer="FIU DC">
+                            <span class="radio-circle"></span> FIU DC
+                        </button>
+                    </div>
+                </section>
+ 
+                <!-- Q5 -->
+                <section class="question-box" data-question="5">
+                    <img src="05.jpg" alt="Building Image" onerror="this.style.backgroundColor='#eee'">
+                    <h3>5. Name the garage.</h3>
+                    <div class="answers">
+                        <button class="answer-btn" data-question="5" data-answer="PG6">
+                            <span class="radio-circle"></span> PG6
+                        </button>
+                        <button class="answer-btn" data-question="5" data-answer="PG4">
+                            <span class="radio-circle"></span> PG4
+                        </button>
+                        <button class="answer-btn" data-question="5" data-answer="PG3">
+                            <span class="radio-circle"></span> PG3
+                        </button>
+                        <button class="answer-btn" data-question="5" data-answer="PG5">
+                            <span class="radio-circle"></span> PG5
+                        </button>
+                    </div>
+                </section>
+                
+                <div class="submit-area">
+                    <button id="submitBtn" class="action-btn">Submit Quiz</button>
+                </div>
+            </div>
+            
+            <!-- Results View Container (Hidden by default) -->
+            <div id="resultsView" class="hidden">
+                <div class="results-card">
+                    <h1>Quiz Complete!</h1>
+                    <div class="score-big" id="scoreNumber">0/5</div>
+                    <p id="scoreMessage"></p>
+                    <div id="resultsDetails" class="details-box"></div>
+                    <button id="retakeBtn" class="action-btn">Retake Quiz</button>
+                </div>
+            </div>
+
+        </main>
+ 
+        <aside class="right-fixed-panel">
+            
+            <div class="side-card header-card">
+                <h1>KNOW YOUR CAMPUS</h1>
+                <h2>FIU Edition</h2>
+            </div>
+ 
+            <div class="side-card note-card">
+                <p><strong>Note:</strong> You are answering these questions for fun. No reward shall be awarded.</p>
+            </div>
+ 
+            <div class="side-card progress-card">
+                <label>Progress</label>
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text"><span id="answeredCount">0</span> / 5 Answered</div>
+            </div>
+ 
+            <div class="side-card time-card">
+                <label>Time Elapsed</label>
+                <div class="timer-display" id="timerDisplay">00:00</div>
+            </div>
+ 
+            <div class="side-card quit-card">
+                <button id="quitBtn" class="quit-btn">Quit?</button>
+            </div>
+        </aside>
+ 
+    </div>
+ 
+    <script src="interactiveQuizFun.js"></script>
+</body>
+</html>

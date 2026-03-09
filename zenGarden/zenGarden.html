@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link href="zenstyle.css" rel="stylesheet" type="text/css">
+   
+    <title>CSS Zen Garden - Nathan Masachi</title>
+</head>
+<body>
+
+    <audio autoplay loop muted controls id="bgMusic">
+    <source src="bgMusic.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+    const music = document.getElementById('bgMusic');
+    music.volume = 0.5;
+    
+    // Unmute on first user interaction
+    document.body.addEventListener('click', function() {
+        music.muted = false;
+    }, { once: true });
+    </script>
+
+
+
+    <header>
+        <h1>CSS Zen Garden</h1>
+    </header>
+
+
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank" target = "one">W3Schools</a></li>
+            <li><a href="https://www.csszengarden.com/" target="_blank">Zen Garden</a></li>
+            <li><a href="https://youtu.be/a0qMe7Z3EYg"target = "one">Design Code RAP</a></li>
+        </ul>
+    </nav>
+
+     <header>
+        <h2>The Beauty of CSS Design</h2>
+    </header>
+
+
+    <main>
+        <section class="intro">
+            <div class="zen-images">
+                <img class = "circle" src="circle.gif" alt="Picture of a Circle">
+            </div>
+            
+            <article class="preamble">
+                <h3 class = "subhead">The Road to Enlightenment</h3>
+                <p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible DOMs, and broken CSS support.</p>
+                <p>Today, we must clear the mind of past practices. Web enlightenment has been achieved thanks to the tireless efforts of folk like the W3C, WaSP and the major browser creators.</p>
+                <p>The css Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the (yet to be) time-honored techniques in new and invigorating fashion. Become one with the web.</p>
+            </article>
+        </section>
+
+        <section class="main-content">
+            <article class="explanation">
+                <h3 class = "subhead">So What is This About?</h3>
+                <p>There is clearly a need for CSS to be taken seriously by graphic artists. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet into this very page. The code remains the same, the only thing that has changed is the external .css file. Yes, really.</p>
+                <p>CSS allows complete and total control over the style of a hypertext document. The only way this can be illustrated in a way that gets people excited is by demonstrating what it can truly be, once the reins are placed in the hands of those able to create beauty from structure. To date, most examples of neat tricks and hacks have been demonstrated by structurists and coders. Designers have yet to make their mark. This needs to change.</p>
+            </article>
+
+            <article class="participation">
+                <h3 class = "subhead">Participation</h3>
+                <p>Graphic artists only please. You are modifying this page, so strong CSS skills are necessary, but the example files are commented well enough that even CSS novices can use them as starting points. Please see the CSS Resource Guide for advanced tutorials and tips on working with CSS.</p>
+                <p>You may modify the style sheet in any way you wish, but not the HTML. This may seem daunting at first if you've never worked this way before, but follow the listed links to learn more, and use the sample files as a guide.</p>
+                <p>Download the sample html file and css file to work on a copy locally. Once you have completed your masterpiece (and please, don't submit half-finished work) upload your .css file to a web server under your control. Send us a link to the file and if we choose to use it, we will spider the associated images. Final submissions will be placed on our server.</p>
+            </article>
+
+            <article class="benefits">
+                <h3 class = "subhead">Benefits</h3>
+                <p>Why participate? For recognition, inspiration, and a resource we can all refer to when making the case for CSS-based design. This is sorely needed, even today. More and more major sites are taking the leap, but not enough have. One day this gallery will be a historical curiosity; that day is not today.</p>
+            </article>
+            <img class = "wu" src="wu.gif" alt="Picture of the Wu Symbol">
+
+            <article class="requirements" id="design">
+                <h3 class = "subhead">Requirements</h3>
+                <p>We would like to see as much CSS1 as possible. CSS2 should be limited to widely-supported elements only. The css Zen Garden is about functional, practical CSS and not the latest bleeding-edge tricks viewable by 2% of the browsing public. The only real requirement we have is that your CSS validates.</p>
+                <p>Unfortunately, designing this way highlights the flaws in the various implementations of CSS. Different browsers display differently, even completely valid CSS at times, and this becomes maddening when a fix for one leads to breakage in another. View the Resources page for information on some of the fixes available. Full browser compliance is still sometimes a pipe dream, and we do not expect you to come up with pixel-perfect code across every platform. But do test in as many as you can. If your design doesn't work in at least IE5+/Win and Mozilla (run by over 90% of the population), chances are we won't accept it.</p>
+                <p>We ask that you submit original artwork. Please respect copyright laws. Please keep objectionable material to a minimum; tasteful nudity is acceptable, outright pornography will be rejected.</p>
+                <p>This is a learning exercise as well as a demonstration. You retain full copyright on your graphics (with limited exceptions, see submission guidelines), but we ask you release your CSS under a Creative Commons license identical to the one on this site so that others may learn from your work.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3 class="project-title" style="margin-bottom: 20px;">DIG 3110 | Interactive Visualization | Fall 2025</h3>
+            <div class="footer-socials">
+                <a href="https://masachidc.com/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-solid fa-globe"></i></a>
+                <a href="https://www.instagram.com/masachi.dc/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nathanmasachi/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.behance.net/masachidc" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-behance"></i></a>
+            </div>
+            <p class="copyright">Copyright © 2025 | Nathan Masachi. All rights reserved.</p>
+        </div>
+    </footer>
+
+  
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

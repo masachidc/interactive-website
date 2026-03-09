@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="codepen.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../zenGarden/zenGarden.html" class="nav-link">Zen Garden</a>
+            <a href="../longFormMultimedia/longFormMultimedia.html" class="nav-link">Multimedia</a>
+            <a href="../interactiveQuiz/knowYourSchool.html" class="nav-link">Interactive Quiz</a>
+            <a href="../coinTossGame/coinTossGame.html" class="nav-link">Coin Toss</a>
+            <a href="../codepen/codepen.html" class="nav-link">Code Pen</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="game-container">
+            <h1>Hangman</h1>
+            <p class="subtitle">Guess the word by selecting letters below!</p>
+            
+            <div class="game-info">
+                <div class="category-box" id="catagoryName">Select a category</div>
+                <div class="lives-box" id="mylives">Lives: 10</div>
+            </div>
+            <div class="canvas-container">
+                <canvas id="stickman" width="400" height="400"></canvas>
+            </div>
+            <div id="hold"></div>
+            <div id="buttons"></div>
+            <div class="clue-box" id="clue">Click "Hint" for a clue</div>
+            <div class="button-container">
+                <button id="hint">Hint</button>
+                <button id="reset">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <h3 class="project-title">DIG 3110 | Interactive Visualization | Fall 2025</h3>
+            <div class="footer-socials">
+                <a href="https://masachidc.com/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-solid fa-globe"></i></a>
+                <a href="https://www.instagram.com/masachi.dc/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nathanmasachi/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.behance.net/masachidc" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-behance"></i></a>
+            </div>
+            <p class="copyright">Copyright © 2025 | Nathan Masachi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="codepen.js"></script>
+</body>
+</html>

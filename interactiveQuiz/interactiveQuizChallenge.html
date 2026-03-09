@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="interactiveQuizChallenge.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <title>Know Your Campus - FIU Edition</title>
+</head>
+<body>
+ 
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../zenGarden/zenGarden.html" class="nav-link">Zen Garden</a>
+                <a href="../longFormMultimedia/longFormMultimedia.html" class="nav-link">Multimedia Package</a>
+                <a href="../interactiveQuiz/knowYourSchool.html" class="nav-link">Interactive Quiz</a>
+                <a href="../coinTossGame/coinTossGame.html" class="nav-link">Coin Toss</a>
+           </div>
+        </div>
+    </nav>
+ 
+    <div class="split-layout">
+        
+        <main class="left-scroll-panel">
+            <div class="quiz-content" id="gameArea">
+                
+                <div id="introView" class="view-section">
+                    <div class="intro-text">
+                        <h1>Welcome, Panther!</h1>
+                        <p><strong>Speed Challenge Rules:</strong></p>
+                        <ul style="margin-left: 20px; line-height: 1.6; margin-bottom: 20px;">
+                            <li>⏱️ 10 Seconds per question.</li>
+                            <li>🚫 Do not switch tabs (Anti-Cheat Active).</li>
+                            <li>🏆 Faster answers = Higher score.</li>
+                        </ul>
+                    </div>
+                    <button id="startBtn" class="action-btn">Start Challenge</button>
+                </div>
+
+                <div id="questionView" class="view-section hidden">
+                    
+                    <div class="timer-container">
+                        <div id="timerBar" class="timer-fill"></div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="image-container">
+                            <img id="qImage" src="" alt="Quiz Image" onerror="this.style.backgroundColor='#eee'">
+                        </div>
+                        
+                        <h3 id="qText">Question Loading...</h3>
+                        
+                        <div id="answersGrid" class="answers">
+                            </div>
+                    </div>
+                </div>
+
+                <div id="resultsView" class="view-section hidden">
+                    <div class="results-card">
+                        <h1>Quiz Complete!</h1>
+                        <div class="score-big" id="finalScoreDisplay">0</div>
+                        <p id="finalMessage" style="margin-bottom: 20px;">Assessment complete.</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 30px;">
+                            <div class="side-card" style="padding: 15px; background: #f3f4f6; border: 1px solid #e5e7eb; color: #1f2937;">
+                                <label style="color: #6b7280;">Speed Bonus</label>
+                                <div id="speedStat" style="font-weight: 700; font-size: 1.2rem;">0</div>
+                            </div>
+                            <div class="side-card" style="padding: 15px; background: #f3f4f6; border: 1px solid #e5e7eb; color: #1f2937;">
+                                <label style="color: #6b7280;">Fair Play</label>
+                                <div id="fairPlayStat" style="font-weight: 700; font-size: 1.2rem;">100%</div>
+                            </div>
+                        </div>
+
+                        
+                        <button id="homeBtn" class="action-btn" style="background: transparent; color: var(--fiu-blue); border: 2px solid var(--fiu-blue); margin-top: 10px;">Return Home</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+ 
+        <aside class="right-fixed-panel">
+            
+            <div class="side-card header-card">
+                <h1>KNOW YOUR CAMPUS</h1>
+                <h2>FIU Edition</h2>
+            </div>
+ 
+            <div class="side-card info-card">
+                <label>Current Score</label>
+                <div class="timer-display" id="currentScore" style="font-size: 2rem;">0</div>
+            </div>
+
+            <div class="side-card progress-card">
+                <label>Progress</label>
+                <div class="progress-track">
+                    <div class="progress-fill" id="overallProgress"></div>
+                </div>
+                <div class="progress-text" style="text-align: right; color: #cbd5e1; font-size: 0.8rem; margin-top: 5px;">
+                    <span id="qCount">0</span> / 5
+                </div>
+            </div>
+ 
+            <div class="side-card time-card">
+                <label>Time Remaining</label>
+                <div class="timer-display" id="timerText" style="color: #ef4444;">10</div>
+            </div>
+
+            <div class="side-card note-card">
+                <label>System Status</label>
+                <p id="systemStatus">🟢 Active</p>
+            </div>
+
+        </aside>
+ 
+    </div>
+
+    <div id="warningModal" class="modal-overlay hidden">
+        <div class="modal-box">
+            <h2 style="color: var(--fiu-blue); margin-bottom: 10px;">⚠️ Activity Detected</h2>
+            <p style="color: #4b5563; margin-bottom: 20px;">Tab switching is not allowed during the speed challenge.</p>
+            <button id="resumeBtn" class="action-btn" style="width: 100%; margin-top: 0;">Resume Quiz</button>
+        </div>
+    </div>
+ 
+    <script src="interactiveQuizChallenge.js"></script>
+</body>
+</html>

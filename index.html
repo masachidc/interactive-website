@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<title> Home | Nathan Masachi</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-links">
+                <a href="#" class="nav-link">Home</a>
+                <a href = "zenGarden/zenGarden.html"> Zen Garden</a>
+                <a href = "longFormMultimedia/longFormMultimedia.html"> Multimedia</a>
+                <a href = "interactiveQuiz/knowYourSchool.html"> Interactive Quiz</a>
+                <a href = "coinTossGame/coinTossGame.html"> Coin Toss</a>
+                <a href = "codepen/codepen.html"> Code Pen</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-cloud">
+        <div class="container">
+            <!-- Hero Card -->
+            <div class="hero-card">
+                <div class="hero-content">
+                    <h1 class="hero-title">Nathan Masachi</h1>
+                    <p class="hero-subtitle">Digital Interactive Media + Minor in Computer Science</p>
+                    <hr class="divider">
+                    <p class="hero-desc">
+                        I am a self-driven, future-focused creative based in Miami, Florida.
+                    </p>
+                    <div>
+                        <a href="#about" class="btn-main">Read Full Bio</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="nathanMasachi.jpg" alt="Nathan">
+                </div>
+            </div>
+
+            <!-- Info Grid -->
+            <div class="info-grid">
+                <div class="glass-panel">
+                    <h2 class="section-header">About the Projects</h2>
+                    <p class="text-small">
+                        <p>Duration: <strong> <em>12 weeks</em></strong></p>
+                        The projects below were fully built using <strong style="color: #8B4513;">HTML, CSS,</strong> and <strong style="color: #8B4513;">JavaScript</strong> during my Fall 2025 Interactive Media class. The course strengthened my skills in web publishing, development, and responsive design. Prior to starting the class projects, I earned certifications in HTML, CSS, and JavaScript through Codecademy.
+                    </p>
+                </div>
+                <div class="glass-panel" style="display: flex; flex-direction: column; justify-content: center;">
+                    <h2 class="section-header text-center" style="margin-bottom: 20px;">Tools</h2>
+                    <div class="tools-container">
+                        <div class="tool-item">
+                            <i class="fab fa-html5 tool-icon"></i>
+                            <span class="tool-label">HTML</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-css3-alt tool-icon"></i>
+                            <span class="tool-label">CSS</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-js tool-icon"></i>
+                            <span class="tool-label">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+     <section id="projects" class="section-white">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Zen Garden -->
+                <a href="zenGarden/zenGarden.html" class="project-card">
+                    <h3 class="project-title">Zen Garden</h3>
+                    <p class="text-small">
+                        Participated in the famous <span class="text-bold">CSS Zen Garden</span> project to explore the beauty of CSS.
+                    </p>
+                </a>
+
+                <!-- Multimedia -->
+                <a href="longFormMultimedia/longFormMultimedia.html" class="project-card">
+                    <h3 class="project-title">Multimedia Package</h3>
+                    <p class="text-small">
+                        I profiled Apple's new <span class="text-bold">Liquid Glass</span> user interface. The future of immersive and interactive media has started.
+                    </p>
+                </a>
+
+                <!-- Interactive Quiz -->
+                <a href = "interactiveQuiz/knowYourSchool.html" class="project-card">
+                    <h3 class="project-title">Interactive Quiz</h3>
+                    <p class="text-small">
+                        The Interactive Quiz enabled me to dive deep into JavaScript to explore the beauty and quirks of <span class="text-bold">glassmorphism</span>.
+                    </p>
+                </a>
+
+                <!-- Coin Toss -->
+                <a href="coinTossGame/coinTossGame.html" class="project-card">
+                    <h3 class="project-title">Coin Toss Game</h3>
+                    <p class="text-small">
+                        <span class="text-bold" style="font-style: italic;">if</span> or <span class="text-bold" style="font-style: italic;">else</span> statements + <span class="text-bold">Math.random</span>. Play to see your chances.
+                    </p>
+                </a>
+
+                <!-- Hangman -->
+                <a href="codepen/codepen.html" class="project-card">
+                    <h3 class="project-title">The Hangman Game</h3>
+                    <p class="text-small">
+                        Learning through other people's work. I <span class="text-bold">improved</span> the UI of the Code Pen code to make it a little more interactive.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-cloud">
+        <div class="about-overlay"></div>
+        <div class="container">
+            <div class="about-content-wrapper">
+                
+                <div style="width: 100%;">
+                    <h2 class="section-title" style="position: relative; z-index: 2;">About Me</h2>
+                    
+                    <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+                        <div class="bio-card">
+                            <h3 class="project-title" style="margin-bottom: 20px; color: #8B4513;">Nathan Masachi</h3>
+
+                            <div class="text-small" style="display: flex; flex-direction: column; gap: 15px;">
+                                <p>I’m a future-focused creative based in Miami, currently a senior at Florida International University studying Digital Interactive Media with a minor in Computer Science.</p>
+                                <p>I’m currently seeking opportunities in UI/UX product design, with the long-term goal of growing into a product architect or systems designer.</p>
+                                <p>My architecture and technical drawing background brings structure, clarity, and systems-level thinking to my digital work, while computer science studies strengthen my design-heavy foundation with a solid understanding of how products are built end to end.</p>
+                                <p>I especially enjoy projects at the intersection of innovative technology, human-centered design, and social impact, but I’m happy to tackle a wide range of projects that stretch my skills and creativity. I help turn ideas into thoughtfully designed digital products and services, and I’m currently open to collaborations. </p>
+                                <p>Beyond school and work, I’m passionate about community, art, culture, and near-term futurism. I share my perspectives on LinkedIn through my newsletter, <a href="https://www.linkedin.com/newsletters/7369826343930195969/" target="_blank" style="color: #8B4513;"> <strong>KESHO, Embracing Futurism</strong></a>.</p>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Software Sidebar -->
+                        <div class="software-bar">
+                            <div class="software-icon"><i class="fab fa-figma"></i></div>
+                            <div class="adobe-icon">Ae</div>
+                            <div class="adobe-icon">Pr</div>
+                            <div class="adobe-icon">Ai</div>
+                            <div class="adobe-icon">Ps</div>
+                            <div class="software-icon"><i class="fa-solid fa-cube"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3 class="project-title" style="margin-bottom: 20px;">DIG 3110 | Interactive Visualization | Fall 2025</h3>
+            <div class="footer-socials">
+                <a href="https://masachidc.com/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-solid fa-globe"></i></a>
+                <a href="https://www.instagram.com/masachi.dc/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nathanmasachi/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.behance.net/masachidc" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-behance"></i></a>
+            </div>
+            <p class="copyright">Copyright © 2025 | Nathan Masachi. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <script src="indexFinal.js"></script>
+
+</body>
+
+</html>

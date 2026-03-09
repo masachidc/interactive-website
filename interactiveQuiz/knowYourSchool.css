@@ -1,0 +1,317 @@
+<style>
+    /* --- Reset & Variables --- */
+    :root {
+        --brand-brown: #8B4513;
+        --brand-dark: #333333;
+        --text-gray: #4b5563;
+        --bg-gray: #f5f5f5;
+        --card-gray: #E5E5E5;
+        --glass-bg: rgba(255, 255, 255, 0.85);
+        --glass-border: rgba(255, 255, 255, 0.3);
+        --font-main: 'Inter', sans-serif;
+        
+        /* New Project Variables */
+        --kys-blue: #091F3F;
+        --kys-yellow: #F5B830;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        color: var(--brand-dark);
+        background-color: var(--bg-gray);
+        line-height: 1.6;
+    }
+
+    /* --- Utility Classes --- */
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .text-center { text-align: center; }
+    .text-bold { font-weight: 700; }
+    .text-brown { color: var(--brand-brown); }
+    
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* --- Navigation --- */
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #9ca3af;
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 30px;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 0 20px;
+    }
+
+    .nav-link {
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #1f2937;
+        transition: color 0.2s ease;
+    }
+
+    .nav-link:hover {
+        color: var(--brand-brown);
+    }
+
+    /* --- Know Your School Project Styles --- */
+    
+    /* 1. Wrapper acts as the frame */
+    .know-your-school-wrapper {
+        position: relative;
+        width: 100%;
+        height: 720px;
+        overflow: hidden;
+    }
+
+    /* 2. Background image fits the frame */
+    .fiu-campus {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* 3. Overlay creates the layout on top of the image */
+    .overlay-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, 
+            rgba(255, 255, 255, 0.95) 0%, 
+            rgba(255, 255, 255, 0.9) 40%, 
+            rgba(255, 255, 255, 0.3) 70%, 
+            rgba(255, 255, 255, 0) 100%);
+        padding: 50px 100px 50px 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Header Layout */
+    .header-section {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 80px;
+        gap: 30px;
+    }
+
+    .nys-logo {
+        height: 80px;
+        width: auto;
+    }
+
+    .fiu-logo {
+        height: 50px;
+        width: auto;
+        margin-left: auto;
+    }
+
+    .edition-title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        font-size: 2.8rem;
+        color: #091F3F;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        margin: 0;
+    }
+
+    /* Main Content Layout */
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        max-width: 700px;
+        margin-left: 20px;
+        padding-left: 0;
+    }
+
+    .main-heading {
+        font-family: 'Inter', sans-serif;
+        font-size: 4rem;
+        font-weight: 800;
+        color: #091F3F;
+        line-height: 1.1;
+        margin-bottom: 35px;
+    }
+
+    .description-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.35rem;
+        color: var(--kys-blue);
+        line-height: 1.6;
+        margin-bottom: 45px;
+        font-weight: 400;
+    }
+
+    /* Buttons */
+    .button-group {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .challenge-button {
+        background-color: #F5B830;
+        color: #091F3Fs;
+        border: none;
+        padding: 18px 40px;
+        border-radius: 50px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 1.15rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .challenge-button:hover {
+        background-color: #BA8000;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .fun-button {
+        background-color: transparent;
+        color: #091F3F;
+        border: 1px solid #F5B830;
+        padding: 18px 40px;
+        border-radius: 50px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 1.15rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    .fun-button:hover {
+        background-color: #BA8000;
+        transform: translateY(-2px);
+    }
+
+    /* --- Footer --- */
+    footer {
+        background-color: #9ca3af;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .footer-socials {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    .social-link {
+        font-size: 1.5rem;
+        color: black;
+        transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+        color: white;
+        transform: translateY(-3px) scale(1.2);
+    }
+
+    .copyright {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #1f2937;
+    }
+
+    /* --- Animations --- */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-in {
+        animation: fadeInUp 0.6s ease forwards;
+    }
+
+    /* --- Media Queries --- */
+    @media (max-width: 768px) {
+        .know-your-school-wrapper {
+            height: auto;
+            min-height: 720px;
+        }
+        
+        .overlay-content {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px 20px;
+        }
+
+        .content-section {
+            margin-left: 0;
+        }
+
+        .header-section {
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 50px;
+            align-items: flex-start;
+        }
+
+        .fiu-logo {
+            margin-left: 0;
+            align-self: flex-end;
+        }
+
+        .edition-title {
+            font-size: 2rem;
+        }
+
+        .main-heading {
+            font-size: 2.5rem;
+        }
+
+        .description-text {
+            font-size: 1.1rem;
+        }
+        
+        .button-group {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .challenge-button,
+        .fun-button {
+            width: 100%;
+        }
+    }
+</style>
